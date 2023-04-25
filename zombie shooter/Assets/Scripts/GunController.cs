@@ -34,8 +34,8 @@ public class GunController : MonoBehaviour
         bulletRigidbody.useGravity = false;
 
         // Rotate the bullet to match the gun barrel's rotation
-        bullet.transform.rotation = gunBarrel.rotation;
+        bullet.transform.rotation = gunBarrel.rotation * Quaternion.Euler(90f, 0f, 0f);
 
-        
+        Destroy(bullet, bulletLifetime);
     }
 }
