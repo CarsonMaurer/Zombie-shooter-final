@@ -1,32 +1,30 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class HealthController : MonoBehaviour
 {
-    public int damage = 10;
-
-    void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject.CompareTag("Player"))
-        {
-            PlayerHealth playerHealth = collision.gameObject.GetComponent<PlayerHealth>();
-            if (playerHealth != null)
-            {
-                playerHealth.TakeDamage(damage);
-            }
-        }
-    }
-}
-
-public class PlayerHealth : MonoBehaviour
-{
     public int maxHealth = 100;
     public int currentHealth;
+    public TextMeshProUGUI healthText;
 
     void Start()
     {
         currentHealth = maxHealth;
+    }
+
+    void Update()
+    {
+        healthText.text = currentHealth.ToString();
+    }
+
+    void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Enemy"))
+        {
+            TakeDamage(10);
+        }
     }
 
     public void TakeDamage(int damage)
@@ -40,7 +38,6 @@ public class PlayerHealth : MonoBehaviour
 
     void Die()
     {
-        // Play death animation or sound, remove object from scene, etc.
         Destroy(gameObject);
     }
 }

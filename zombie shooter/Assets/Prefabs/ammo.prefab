@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 3205140100348957721}
   - component: {fileID: 1330814149344545126}
-  - component: {fileID: 1039499422}
   - component: {fileID: 8913347472763271656}
   m_Layer: 0
   m_Name: ammo
@@ -49,24 +48,8 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 112
   m_CollisionDetection: 0
---- !u!114 &1039499422
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2824075120528101027}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cb5ba81d1223c82409c66480c609bbf8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 100
-  lifeTime: 2
-  enemyTag: Enemy
-  playerTag: Player
 --- !u!136 &8913347472763271656
 CapsuleCollider:
   m_ObjectHideFlags: 0

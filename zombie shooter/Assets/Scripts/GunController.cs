@@ -24,18 +24,50 @@ public class GunController : MonoBehaviour
         }
     }
 
-    private void Shoot()
-    {
-        lastShotTime = Time.time;
+private void Shoot()
+{
+    lastShotTime = Time.time;
 
-        GameObject bullet = Instantiate(bulletPrefab, gunBarrel.position, Quaternion.identity);
-        Rigidbody bulletRigidbody = bullet.GetComponent<Rigidbody>();
-        bulletRigidbody.velocity = playerTransform.forward * bulletSpeed;
-        bulletRigidbody.useGravity = false;
+    // Spawn the initial bullet
+    Vector3 spawnPosition = gunBarrel.position + gunBarrel.forward * 0.5f;
+
+    GameObject bullet = Instantiate(bulletPrefab, spawnPosition, Quaternion.identity);
+    Rigidbody bulletRigidbody = bullet.GetComponent<Rigidbody>();
+    bulletRigidbody.velocity = playerTransform.forward * bulletSpeed;
+    bulletRigidbody.useGravity = false;
+
+    // Rotate the bullet to match the gun barrel's rotation
+    bullet.transform.rotation = gunBarrel.rotation * Quaternion.Euler(90f, 0f, 0f);
+
+    Destroy(bullet, bulletLifetime);
+
+    // Spawn two additional bullets with a rotation of +/- 35 degrees around the y-axis and a z-rotation of -120 and 120
+    for (int i = -1; i <= 1; i += 2)
+    {
+        Quaternion rotation = Quaternion.Euler(0f, i * 25f, 0f);
+        Quaternion zRotation = Quaternion.Euler(0f, 0f, i * -120f);
+        GameObject bulletClone = Instantiate(bulletPrefab, spawnPosition, rotation * zRotation);
+        Rigidbody bulletCloneRigidbody = bulletClone.GetComponent<Rigidbody>();
+        bulletCloneRigidbody.velocity = (rotation * playerTransform.forward) * bulletSpeed;
+        bulletCloneRigidbody.useGravity = false;
 
         // Rotate the bullet to match the gun barrel's rotation
-        bullet.transform.rotation = gunBarrel.rotation * Quaternion.Euler(90f, 0f, 0f);
+        bulletClone.transform.rotation = gunBarrel.rotation * Quaternion.Euler(90f, 0f, 0f);
 
-        Destroy(bullet, bulletLifetime);
+        // Disable collisions between the bullets
+        Physics.IgnoreCollision(bullet.GetComponent<Collider>(), bulletClone.GetComponent<Collider>());
+
+        Destroy(bulletClone, bulletLifetime);
     }
+} 
+
+
+
+
+
+
+
+
+
+
 }

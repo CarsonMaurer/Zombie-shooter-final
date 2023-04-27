@@ -1,8 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
-public class EnemyController : MonoBehaviour
+
+public class Enemy : MonoBehaviour
 {
     public int maxHealth = 100;
     public int currentHealth;
@@ -24,10 +26,13 @@ public class EnemyController : MonoBehaviour
             }
         }
     }
+    public UnityEvent OnDeath;
 
-    void Die()
+    public void Die()
     {
-        // Play death animation or sound, remove object from scene, etc.
+        OnDeath.Invoke();
         Destroy(gameObject);
     }
+        
+        
 }
