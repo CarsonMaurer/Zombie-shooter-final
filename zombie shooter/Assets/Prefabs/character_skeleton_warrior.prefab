@@ -100,7 +100,7 @@ GameObject:
   - component: {fileID: 1597900702592673483}
   - component: {fileID: 1597900702592673472}
   - component: {fileID: 1597900702592673487}
-  - component: {fileID: 1727763760}
+  - component: {fileID: 8065515181472106658}
   m_Layer: 0
   m_Name: character_skeleton_warrior
   m_TagString: Enemy
@@ -227,8 +227,8 @@ MonoBehaviour:
   OnDeath:
     m_PersistentCalls:
       m_Calls: []
---- !u!64 &1727763760
-MeshCollider:
+--- !u!136 &8065515181472106658
+CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -237,10 +237,10 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -3071785175480579466, guid: 936c4c92409a8ad4394ed4e18858b8ee, type: 3}
+  m_Radius: 0.3683624
+  m_Height: 1.0054283
+  m_Direction: 1
+  m_Center: {x: -0.0011393726, y: 0.50271404, z: -0.0046513975}
 --- !u!1 &3624324220678690137
 GameObject:
   m_ObjectHideFlags: 0
