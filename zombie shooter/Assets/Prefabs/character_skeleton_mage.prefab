@@ -699,7 +699,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 112
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!114 &8279188530196247149
 MonoBehaviour:
@@ -714,7 +714,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
-  speed: 4
+  speed: 3
 --- !u!114 &8279188530196247060
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -729,9 +729,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 75
   currentHealth: 0
-  OnDeath:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!64 &1658875433
 MeshCollider:
   m_ObjectHideFlags: 0

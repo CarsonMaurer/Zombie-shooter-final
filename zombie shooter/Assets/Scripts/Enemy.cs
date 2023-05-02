@@ -26,11 +26,11 @@ public class Enemy : MonoBehaviour
             }
         }
     }
-    public UnityEvent OnDeath;
+   
 
     public void Die()
     {
-        OnDeath.Invoke();
+
         Destroy(gameObject);
     }
         

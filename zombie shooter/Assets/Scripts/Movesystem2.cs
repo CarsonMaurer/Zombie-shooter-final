@@ -1,3 +1,5 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class Movesystem2 : MonoBehaviour
@@ -9,7 +11,7 @@ public class Movesystem2 : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>(); // Get the Rigidbody component
-        rb.constraints = RigidbodyConstraints.FreezeRotation; // Freeze rotation of the Rigidbody
+        rb.constraints = RigidbodyConstraints.FreezeRotation | RigidbodyConstraints.FreezePositionY; // Freeze rotation and Y position of the Rigidbody
     }
 
     void FixedUpdate()
@@ -38,3 +40,4 @@ public class Movesystem2 : MonoBehaviour
         }
     }
 }
+
