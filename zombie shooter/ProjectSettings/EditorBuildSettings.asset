@@ -6,19 +6,19 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Wave 0.unity
+    path: Assets/Scenes/Wave 1.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
-    path: Assets/Scenes/Wave 1.unity
+    path: Assets/Scenes/Wave 2.unity
     guid: 234b85367567bf24e90438a3bda601d1
   - enabled: 1
-    path: Assets/Scenes/Wave 2.unity
+    path: Assets/Scenes/Wave 3.unity
     guid: a577251912811884a8f2d57afe674582
   - enabled: 1
-    path: Assets/Scenes/Wave 3.unity
+    path: Assets/Scenes/Wave 4.unity
     guid: a4b8e7d5e23ce664ba17e10900040a2f
   - enabled: 1
-    path: Assets/Scenes/Wave 4.unity
+    path: Assets/Scenes/Wave 5.unity
     guid: 73f52cfd4b21ef44ea3018baf4e9c7a3
   - enabled: 1
     path: Assets/Scenes/VictoryScene.unity

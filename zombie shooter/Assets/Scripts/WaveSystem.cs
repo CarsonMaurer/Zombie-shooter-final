@@ -27,6 +27,7 @@ public class WaveSystem : MonoBehaviour
         {
             enemy.SetActive(true);
         }
+        Debug.Log("Enemy Count " + enemies.Length);
     }
 
     void Update()
