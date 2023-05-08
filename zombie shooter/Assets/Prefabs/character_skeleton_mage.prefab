@@ -266,6 +266,7 @@ GameObject:
   - component: {fileID: 5277201831655068390}
   - component: {fileID: 7483927207034470336}
   - component: {fileID: 3546062015264349924}
+  - component: {fileID: 83595598}
   m_Layer: 0
   m_Name: character_skeleton_mage_armRight
   m_TagString: Untagged
@@ -340,6 +341,26 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!95 &83595598
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5521173231379243188}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 83fd6185f9df67c429d92984ab4e6872, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &6351512394124007297
 GameObject:
   m_ObjectHideFlags: 0
@@ -434,6 +455,7 @@ GameObject:
   - component: {fileID: 4193517161315065239}
   - component: {fileID: 5993033088311018344}
   - component: {fileID: 1153022624239349932}
+  - component: {fileID: 248536669}
   m_Layer: 0
   m_Name: character_skeleton_mage_armLeft
   m_TagString: Untagged
@@ -508,6 +530,26 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!95 &248536669
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8156273839955314246}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f94873bce43a449499af84be57a7d1a2, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &8836220496965613208
 GameObject:
   m_ObjectHideFlags: 0

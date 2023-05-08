@@ -94,6 +94,7 @@ GameObject:
   - component: {fileID: 6049848699416860857}
   - component: {fileID: 5801063623730741658}
   - component: {fileID: 1935591045161196737}
+  - component: {fileID: 7923780527701316418}
   m_Layer: 0
   m_Name: character_skeleton_minion_armRight
   m_TagString: Untagged
@@ -167,6 +168,26 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!95 &7923780527701316418
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3636335309891427990}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 83fd6185f9df67c429d92984ab4e6872, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &3900229050797325840
 GameObject:
   m_ObjectHideFlags: 0
@@ -349,6 +370,7 @@ GameObject:
   - component: {fileID: 3440362301618314867}
   - component: {fileID: 388871300694394690}
   - component: {fileID: 2784425165751220500}
+  - component: {fileID: 6587506708431090954}
   m_Layer: 0
   m_Name: character_skeleton_minion_armLeft
   m_TagString: Untagged
@@ -422,6 +444,26 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!95 &6587506708431090954
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6804511055653252541}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f94873bce43a449499af84be57a7d1a2, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &7509853554817915302
 GameObject:
   m_ObjectHideFlags: 0
