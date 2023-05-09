@@ -12,11 +12,14 @@ public class HealthController : MonoBehaviour
     public TextMeshProUGUI healthText;
     public GameObject Player;
     public GameObject GameOverPanel;
+    public GameObject StartScreen;
+    public GameObject TutorialScreen;
 
     void Start()
     {
         currentHealth = maxHealth;
-        Time.timeScale = 1;
+        StartScreen.SetActive(true);
+        Time.timeScale = 0;
     }
 
     void Update()
@@ -48,9 +51,28 @@ public class HealthController : MonoBehaviour
         GameOverPanel.SetActive(true);
     }
 
-  public void TryAgainButton()
+    public void TryAgainButton()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        Time.timeScale = 1;
+
+        
+         
+    }
+    public void PlayButton()
+    {
+
+        StartScreen.SetActive(false);
+        TutorialScreen.SetActive(false);
+        Time.timeScale = 1;
+    }
+
+    public void TutorialButton()
+    {
+        TutorialScreen.SetActive(true);
+        StartScreen.SetActive(false);
+        Time.timeScale = 0;
+        
     }
 }
 
