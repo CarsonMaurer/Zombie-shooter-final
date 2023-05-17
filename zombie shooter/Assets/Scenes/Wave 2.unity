@@ -832,11 +832,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 50
   currentHealth: 0
-  healthText: {fileID: 0}
+  healthText: {fileID: 1243125220}
   Player: {fileID: 49750110}
-  GameOverPanel: {fileID: 0}
-  StartScreen: {fileID: 0}
-  TutorialScreen: {fileID: 0}
+  GameOverPanel: {fileID: 497358073}
+  StartScreen: {fileID: 1469777075}
+  TutorialScreen: {fileID: 178320763}
 --- !u!1001 &49827041
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5137,7 +5137,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: WAVE  1
+  m_text: WAVE  2
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: cb3d7cac01f984d4cb684d7a64ec8258, type: 2}
   m_sharedMaterial: {fileID: -4464112370960448584, guid: cb3d7cac01f984d4cb684d7a64ec8258, type: 2}
